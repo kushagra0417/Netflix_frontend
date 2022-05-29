@@ -1,0 +1,55 @@
+.step11-body{
+    position: absolute;
+    top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    z-index: 1;
+    padding: 20px; 
+    color: black;
+    left: 0;
+    right: 0;
+}
+
+.step11-mycard{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border:none !important;
+}
+.step11-auth-card{
+    border:none !important;
+    padding-top: 0;
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: left;
+    max-width: 480px;
+    margin: auto;
+}
+
+.step11-input-field{
+    padding-left: 10px;
+    
+}
+.step11-input-field input[type= text], textarea {
+    padding-left: 10px ;
+    background: white ;
+    border:1px solid black ;
+    border-radius: 2px ;
+    height: 60px ;
+}
+
+.step11-input-field input[type= email], textarea {
+    padding-left: 10px;
+    background: white;
+    border:1px solid black;
+    border-radius: 2px;
+    height: 60px;
+}
+.step11-input-field input[type= password], textarea {
+    padding-left: 10px;
+    background: white;
+    border:1px solid black;
+    border-radius: 2px;
+    height: 60px;
+}
