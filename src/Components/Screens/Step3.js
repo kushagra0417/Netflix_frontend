@@ -24,7 +24,7 @@ const Step3 = () =>{
       
       const user_id = userObj._id
       const createOrder = async() => {
-        fetch(`/createorder/${amount}`, {
+        fetch(`/api/createorder/${amount}`, {
           method:"get",
                   headers:{
                     "Authorization":"Bearer "+localStorage.getItem("jwt"),
@@ -60,7 +60,7 @@ const Step3 = () =>{
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "http://localhost:7000/payment/callback";
+          const verifyUrl = "https://netflixkushagra.netlify.app/payment/callback";
           const { data}= await axios.post(verifyUrl, response);
           if (data) {
             navigate(`/payment/status/${data}`);

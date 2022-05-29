@@ -16,7 +16,7 @@ function Step11(){
     console.log("Email", email)
 
     const PostData=()=>{
-        fetch("/signup",{
+        fetch("/api/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

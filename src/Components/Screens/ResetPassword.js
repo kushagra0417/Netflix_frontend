@@ -11,7 +11,7 @@ function ResetPassword() {
   const [password, setPassword] = useState("");
 
   const PostData = () => {
-    fetch("/newpassword", {
+    fetch("/api/newpassword", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

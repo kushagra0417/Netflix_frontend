@@ -22,7 +22,7 @@ function PaymentStatus() {
   }, []);
 
   const getPaymentStatus = (paymentId) => {
-    fetch(`/payments/${paymentId}/${user_id}`, {
+    fetch(`/api/payments/${paymentId}/${user_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

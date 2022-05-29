@@ -45,7 +45,7 @@ function Profile() {
 
   const createFriendProfile = () => {
     console.log(friend);
-    fetch("/createfriendprofiles", {
+    fetch("/api/createfriendprofiles", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ function Profile() {
 
   const deleteFriendProfile = (item) => {
     console.log("Hello", deleteFriend);
-    fetch("/deletefriendprofiles", {
+    fetch("/api/deletefriendprofiles", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

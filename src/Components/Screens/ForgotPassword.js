@@ -17,7 +17,7 @@ function ForgotPassword() {
     )
       return M.toast({ html: "Invalid email", classes: "#f44336 red" });
 
-    fetch("/resetpassword", {
+    fetch("/api/resetpassword", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
