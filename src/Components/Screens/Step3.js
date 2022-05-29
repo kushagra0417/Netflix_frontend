@@ -60,7 +60,7 @@ const Step3 = () =>{
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "https://netflixkushagra.netlify.app/payment/callback";
+          const verifyUrl = "https://netflixserverkushagra.herokuapp.com/payment/callback";
           const { data}= await axios.post(verifyUrl, response);
           if (data) {
             navigate(`/payment/status/${data}`);
