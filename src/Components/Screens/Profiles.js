@@ -28,7 +28,7 @@ function Profile() {
   }, []);
 
   useEffect(() => {
-    fetch("/allfriends", {
+    fetch("/api/allfriends", {
       method: "get",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
