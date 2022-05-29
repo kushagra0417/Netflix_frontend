@@ -24,7 +24,7 @@
     "styled-components": "^5.3.0",
     "web-vitals": "^1.1.2"
   },
-  "proxy": "https://netflixserverkushagra.herokuapp.com",
+  "proxy": "https://netflixserverkushagra.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
